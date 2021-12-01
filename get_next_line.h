@@ -6,10 +6,9 @@
 /*   By: adbaich <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/25 17:04:57 by adbaich           #+#    #+#             */
-/*   Updated: 2021/11/30 16:12:30 by adbaich          ###   ########.fr       */
+/*   Updated: 2021/12/01 18:33:51 by adbaich          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #ifndef GET_NEXT_LINE_H
 # define GET_NEXT_LINE_H
@@ -21,5 +20,12 @@
 # include <stdlib.h>
 
 char	*get_next_line(int fd);
+void	ft_free(char **s);
+size_t	ft_strlen(char	*s);
+char	*ft_strchr(char *s, int c);
+char	*ft_strjoin(char *s1, char *s2);
+char	*ft_reading(int fd, char *d_main);
+char	*ft_returning(char	*d_main);
+char	*ft_modifying(char *d_main);
 
 #endif
